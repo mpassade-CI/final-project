@@ -13,34 +13,36 @@
           <h1>Resume Builder</h1>
         </div>
         <div class="resume-builder-input-parent">
-          <div class="resume-builder-input-child">
+          <div class="resume-builder-input-child one-input">
             <label for="person-name">Name</label>
             <input type="text" class="person-name" name="person-name">
           </div>
-          <div class="resume-builder-input-child">
-            <label for="person-address">Address</label>
-            <input type="text" class="person-address" name="person-address">
-          </div>
-          <div class="resume-builder-input-child">
+          <div class="resume-builder-input-child one-input">
             <label for="person-email">Email Address</label>
             <input type="text" class="person-email" name="person-email">
           </div>
-          <div class="resume-builder-input-child">
+          <div class="resume-builder-input-child one-input">
             <label for="person-number">Phone Number</label>
             <input type="text" class="person-number" name="person-number">
           </div>
-          <div class="resume-builder-input-child">
+
+          <div class="resume-builder-input-child multiple-fields">
+            <label for="person-address">Address</label>
+            <input type="text" class="person-address" name="person-address">
+          </div>
+
+          <div class="resume-builder-input-child one-input">
             <label for="person-title">Job Title</label>
             <input type="text" class="person-title" name="person-title">
           </div>
-          <div class="resume-builder-input-child">
+          <div class="resume-builder-input-child one-or-more-input">
             <label for="person-skills">Skills</label>
             <input type="text" class="person-skills" name="person-skills">
             <button class="add-field">+</button>
           </div>
 
 
-          <div class="resume-builder-input-child">
+          <div class="resume-builder-input-child one-textarea">
             <div>
               <label for="person-intro">Brief Introduction of Expertise</label>
               <textarea class="person-intro" name="person-intro"></textarea>
@@ -49,7 +51,7 @@
 
 
 
-          <div class="resume-builder-input-child">
+          <div class="resume-builder-input-child multiple-fields">
             <div>
               <p>Work Experience</p>
               <div>
@@ -76,7 +78,7 @@
             </div>
           </div>
 
-          <div class="resume-builder-input-child">
+          <div class="resume-builder-input-child multiple-fields">
             <div>
               <p>Education</p>
               <div>
@@ -98,7 +100,7 @@
           </div>
 
 
-          <div class="resume-builder-input-child">
+          <div class="resume-builder-input-child multiple-fields">
             <div>
               <p>Certifications</p>
               <div>
@@ -132,7 +134,7 @@
         <!-- Dynamic div -->
         
         <!-- End of Dynamic div -->
-        <button title="Close" class="close_modal">
+        <button class="close_modal">
           <i class="fas fa-times"></i>
         </button>
       </div>
