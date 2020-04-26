@@ -1,47 +1,39 @@
-/* homepage container */
 .resume-builder {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-/* 1st third of homepage container. Contains header */ 
 .resume-builder-header {
     margin-bottom: 2%;
 }
-/* 2nd third of homepage container is comprised of these containers. 
-Contains input and textarea fields */
 .resume-builder-input-child {
     margin-bottom: 5%;
     font-size: 20px;
 }
-/* Container with only 1 input field */
 .one-input {
     display: grid;
     grid-template-columns: repeat(2, 45%);
 }
-/* Container originating with 1 input field but has a button that 
-can add more */
 .one-or-more-input {
     display: grid;
     grid-template-columns: 45% 47.5% 7.5%;
 }
-/* Input field for skills */
 .person-skills {
    margin-right: 5%;
 }
-/* Container with only 1 textarea */
-.one-textarea {
+.invisible {
+    visibility: hidden;
+}
+.intro-textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-/* Textarea labels */
 .textarea-label{
     padding-bottom: 5%;
     padding-top: 5%;
 }
-/* Textareas */
-.person-intro, .work-desc {
+.person-intro {
     resize: none;
     width: 100%;
     padding-bottom: 20%;
@@ -52,7 +44,7 @@ p {
     font-size: 20px;
     text-align: center;
 }
-.add-work, .add-school, .add-cert {
+.add-work, .add-school, .add-cert, .add-skill {
     font-size: 13px;
     position: relative;
     left: 50%;
@@ -63,47 +55,12 @@ p {
 }
 .work-desc {
     margin-top: 5%;
+    resize: none;
+    width: 100%;
+    padding-bottom: 20%;
 }
 .create-resume, .clear-form {
     font-size: 13px;
     margin-top: 10%;
-}
-
-
-
-
-.new-student-input-child {
-    
-}
-.new-student-term, .new-term, .term-selection {
-    width: 40px;
-}
-.new-student-submit {
-    width: 360px;
-    display: flex;
-    justify-content: center;
-}
-.new-student-button {
-    font-size: 13px;
-}
-
-.student-display {
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-.student {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.course-btns {
-    margin-bottom: 5px;
-}
-.add-course-btn, .edit-course-btn, .remove-course-btn,
-.delete-student-btn {
-    font-size: 11px;
 }
 
