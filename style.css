@@ -23,8 +23,54 @@ Contains input and textarea fields */
 can add more */
 .one-or-more-input {
     display: grid;
-    grid-template-columns: 45% 45% 5%;
+    grid-template-columns: 45% 47.5% 7.5%;
 }
+/* Input field for skills */
+.person-skills {
+   margin-right: 5%;
+}
+/* Container with only 1 textarea */
+.one-textarea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Textarea labels */
+.textarea-label{
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+/* Textareas */
+.person-intro, .work-desc {
+    resize: none;
+    width: 100%;
+    padding-bottom: 20%;
+}
+p {
+    padding-top: 5%;
+    margin-bottom: 5%;
+    font-size: 20px;
+    text-align: center;
+}
+.add-work, .add-school, .add-cert {
+    font-size: 13px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+.work-label {
+    margin-left: 20%;
+}
+.work-desc {
+    margin-top: 5%;
+}
+.create-resume, .clear-form {
+    font-size: 13px;
+    margin-top: 10%;
+}
+
+
+
 
 .new-student-input-child {
     

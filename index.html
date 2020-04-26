@@ -18,19 +18,17 @@
             <input type="text" class="person-name" name="person-name">
           </div>
           <div class="resume-builder-input-child one-input">
-            <label for="person-email">Email Address</label>
+            <label for="person-address">Address</label>
+            <input type="text" class="person-address" name="person-address">
+          </div>
+          <div class="resume-builder-input-child one-input">
+            <label for="person-email">Email</label>
             <input type="text" class="person-email" name="person-email">
           </div>
           <div class="resume-builder-input-child one-input">
             <label for="person-number">Phone Number</label>
             <input type="text" class="person-number" name="person-number">
           </div>
-
-          <div class="resume-builder-input-child multiple-fields">
-            <label for="person-address">Address</label>
-            <input type="text" class="person-address" name="person-address">
-          </div>
-
           <div class="resume-builder-input-child one-input">
             <label for="person-title">Job Title</label>
             <input type="text" class="person-title" name="person-title">
@@ -40,85 +38,57 @@
             <input type="text" class="person-skills" name="person-skills">
             <button class="add-field">+</button>
           </div>
-
-
           <div class="resume-builder-input-child one-textarea">
-            <div>
-              <label for="person-intro">Brief Introduction of Expertise</label>
+              <label class="textarea-label" for="person-intro">Brief Introduction of Expertise</label>
               <textarea class="person-intro" name="person-intro"></textarea>
-            </div>
           </div>
-
-
-
-          <div class="resume-builder-input-child multiple-fields">
-            <div>
-              <p>Work Experience</p>
-              <div>
-                <div>
-                  <label for="company">Company:</label>
-                  <input type="text" class="company" name="company">
-                </div>
-                <div>
-                  <label for="position">Position:</label>
-                  <input type="text" class="position" name="position">
-                </div>
-                <div>
-                  <label for="work-start">Start Date:</label>
-                  <input type="text" class="work-start" name="work-start">
-                </div>
-                <div>
-                  <label for="work-end">End Date:</label>
-                  <input type="text" class="work-end" name="work-end">
-                </div>
-              </div>
-              <label>Duties & Accomplishments</label>
-              <textarea class="work-desc" name="work-desc"></textarea>
-              <button class="add-work">Add another Job</button>
-            </div>
+          <p>Work Experience</p>
+          <div class="resume-builder-input-child one-input">
+            <label for="company">Company</label>
+            <input type="text" class="company" name="company">
           </div>
-
-          <div class="resume-builder-input-child multiple-fields">
-            <div>
-              <p>Education</p>
-              <div>
-                <div>
-                  <label for="school">School:</label>
-                  <input type="text" class="school" name="school">
-                </div>
-                <div>
-                  <label for="school-end">Graduation/Completion Year:</label>
-                  <input type="text" class="school-end" name="school-end">
-                </div>
-                <div>
-                  <label for="degree">Degree/Diploma Acquired:</label>
-                  <input type="text" class="degree" name="degree">
-                </div>
-                <button class="add-field">+</button>
-              </div>
-            </div>
+          <div class="resume-builder-input-child one-input">
+            <label for="position">Position</label>
+            <input type="text" class="position" name="position">
           </div>
-
-
-          <div class="resume-builder-input-child multiple-fields">
-            <div>
-              <p>Certifications</p>
-              <div>
-                <div>
-                  <label for="cert-name">Name:</label>
-                  <input type="text" class="cert-name" name="cert-name">
-                </div>
-                <div>
-                  <label for="cert-year">Year Achieved:</label>
-                  <input type="text" class="cert-year" name="cert-year">
-                </div>
-                <button class="add-field">+</button>
-              </div>
-            </div>
+          <div class="resume-builder-input-child one-input">
+            <label for="work-start">Start Date</label>
+            <input type="text" class="work-start" name="work-start">
           </div>
-
-          
-
+          <div class="resume-builder-input-child one-input">
+            <label for="work-end">End Date</label>
+            <input type="text" class="work-end" name="work-end">
+          </div>
+      
+          <div class="resume-builder-input-child work-textarea">
+            <label class="work-label" for="work-desc">Duties & Accomplishments</label>
+            <textarea class="work-desc" name="work-desc"></textarea>
+          </div>
+          <button class="add-work">Add Job</button>
+          <p>Education</p>
+          <div class="resume-builder-input-child one-input">
+            <label for="school">School</label>
+            <input type="text" class="school" name="school">
+          </div>
+          <div class="resume-builder-input-child one-input">
+            <label for="school-end">Graduation Year</label>
+            <input type="text" class="school-end" name="school-end">
+          </div>          
+          <div class="resume-builder-input-child one-input">
+            <label for="degree">Degree/Diploma</label>
+            <input type="text" class="degree" name="degree">
+          </div>
+          <button class="add-school">Add School</button>
+          <p>Certifications</p>
+          <div class="resume-builder-input-child one-input">
+            <label for="cert-name">Name:</label>
+            <input type="text" class="cert-name" name="cert-name">
+          </div>
+          <div class="resume-builder-input-child one-input">
+            <label for="cert-year">Year Achieved:</label>
+            <input type="text" class="cert-year" name="cert-year">
+          </div>
+          <button class="add-cert">Add Certificate</button>
         </div>
         <div class="resume-builder-btn">
           <button class="create-resume">Create & View Resume</button>
