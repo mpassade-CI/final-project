@@ -6,6 +6,7 @@ const clearAll = function(){
     document.querySelector('.person-email').value = ""
     document.querySelector('.person-number').value = ""
     document.querySelector('.person-title').value = ""
+    document.querySelector('.person-intro').value = ''
 
     for (const x of document.querySelectorAll('.one-or-more-input')){
         if (x !== document.querySelectorAll('.one-or-more-input')[0]){
