@@ -44,11 +44,15 @@ p {
     font-size: 20px;
     text-align: center;
 }
-.add-work, .add-school, .add-cert, .add-skill {
+.add-work, .remove-work, .remove-school, .remove-cert,
+.add-school, .add-cert, .add-skill {
     font-size: 13px;
     position: relative;
     left: 50%;
     transform: translate(-50%);
+}
+.remove-work, .remove-school, .remove-cert {
+    margin-bottom: 5%;
 }
 .work-label {
     margin-left: 20%;
