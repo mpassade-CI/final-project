@@ -2,24 +2,26 @@ const resumeBtn = document.querySelector('.create-resume')
 const modal = document.querySelector('.modal')
 
 const attachModalListeners= function(modalElm) {
-    modalElm.querySelector('.overlay').addEventListener('click', toggleModal);
+    modalElm.querySelector('.overlay').addEventListener('click', toggleModal)
 }
 
 const detachModalListeners = function(modalElm) {
-    modalElm.querySelector('.overlay').removeEventListener('click', toggleModal);
+    modalElm.querySelector('.overlay').removeEventListener('click', toggleModal)
 }
 
 const toggleModal = function() {
-    const currentState = modal.style.display;
+    const currentState = modal.style.display
 
   // If modal is visible, hide it. Else, display it.
     if (currentState === 'none') {
-    modal.style.display = 'block';
-    attachModalListeners(modal);
+    modal.style.display = 'block'
+    attachModalListeners(modal)
+    buildResume()
     } else {
-    modal.style.display = 'none';
-    detachModalListeners(modal);  
+    modal.style.display = 'none'
+    detachModalListeners(modal)
+    clearResume()
     }
 }
 
-resumeBtn.addEventListener('click', toggleModal);
+resumeBtn.addEventListener('click', toggleModal)
