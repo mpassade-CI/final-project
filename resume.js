@@ -106,4 +106,46 @@ const buildResume = function(){
             document.querySelector('.modal_content').appendChild(duties)
         }
     }
+
+    for (const x of document.querySelectorAll('.school')){
+        if (x.value!==''){
+            const education = document.createElement('p')
+            education.className = 'modal-sub-heading'
+            education.innerText = 'Education'
+            document.querySelector('.modal_content').appendChild(education)
+            break
+        }
+    }
+    if (document.querySelectorAll('.modal-sub-heading')[
+        document.querySelectorAll('.modal-sub-heading').length-1].innerText
+        !=='Education'){
+        for (const x of document.querySelectorAll('.cert-name')){
+            if (x.value!==''){
+                const education = document.createElement('p')
+                education.className = 'modal-sub-heading'
+                education.innerText = 'Education'
+                document.querySelector('.modal_content').appendChild(education)
+                break
+            }
+        }
+    }
+    for (const x of document.querySelectorAll('.school-fields')){
+        if (x.querySelector('.school').value!==''){
+            person.addSchool(x.querySelector('.school').value,
+            x.querySelector('.school-end').value,
+            x.querySelector('.degree').value)
+        }
+    }
+    if (person.schools.length > 0){
+        const schools = document.createElement('p')
+        schools.className = 'school-list'
+        document.querySelector('.modal_content').appendChild(schools)
+        const schoolSect = document.createElement('span')
+        schoolSect.innerText = 'Education: '
+        document.querySelector('.school-list').appendChild(schoolSect)
+        person.getSchoolInfo()
+        const schoolInfo = document.createElement('span')
+        schoolInfo.innerText = person.schoolInfo
+        document.querySelector('.school-list').appendChild(schoolInfo)
+    }
 }

@@ -1,4 +1,22 @@
-
+const School = function(school,gradYr,degree){
+    return {
+        school,
+        gradYr,
+        degree,
+        schoolInfo: '',
+        getSchoolInfo(degree,school,gradYr){
+            const arr = []
+            if (degree!==''){
+                arr.push(degree)
+            }
+            arr.push(school)
+            if (gradYr!==''){
+                arr.push(gradYr)
+            }
+            this.schoolInfo = arr.join(', ')
+        }
+    }
+}
 const Work = function(company,position,startDate,endDate,duties){
     return {
         company,
@@ -18,8 +36,9 @@ const Person = function(){
     return {
         contact: '',
         skills: '',
+        schoolInfo: '',
         work: [],
-        education: [],
+        schools: [],
         certs: [],
         addContact(address,email,number){
             const arr = []
@@ -45,6 +64,17 @@ const Person = function(){
         },
         addJob(company,position,startDate,endDate,duties){
             this.work.push(Work(company,position,startDate,endDate,duties))
+        },
+        addSchool(school,gradYr,degree){
+            this.schools.push(School(school,gradYr,degree))
+        },
+        getSchoolInfo(){
+            const arr = []
+            for (const x of person.schools){
+                x.getSchoolInfo(x.degree,x.school,x.gradYr)
+                arr.push(x.schoolInfo)
+            }
+            this.schoolInfo = arr.join(' | ')
         }
     }
 }
