@@ -1,0 +1,30 @@
+.modal-header {
+    text-align: center;
+    background-color: #D9D9D9;
+    border-style: solid hidden;
+    border-width: 1px;
+    margin-bottom: 0;
+}
+.modal-contact {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 0;
+}
+.modal-job-title {
+    text-align: center;
+    font-size: 24px;
+    color: #366091;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.modal-sub-heading {
+    text-align: center;
+    color: #708DAF;
+    background-color: #F2F2F2;
+    border-style: hidden hidden solid hidden;
+    border-width: 1px;
+    border-color: black;
+}
+.modal-skills {
+    text-align: center;
+}
