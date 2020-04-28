@@ -22,11 +22,31 @@
     left: 50%;
     transform: translate(-50%, -50%);
     height: 90%;
-    width: 75%;
     overflow: auto;
     background: #fff;
     box-sizing: border-box;
     padding: 10px 30px;
     box-shadow: 0 1px 5px rgba(0,0,0,0.7);
     border-radius: 4px;
+}
+
+@media (max-width:600px){
+    .modal_content {
+        width: 90%;
+    }
+}
+@media (min-width:601px) and (max-width:850px){
+    .modal_content {
+        width: 73%;
+    }
+}
+@media (min-width:851px) and (max-width:1100px){
+    .modal_content {
+        width: 56%;
+    }
+}
+@media (min-width:1101px){
+    .modal_content {
+        width: 40%;
+    }
 }
