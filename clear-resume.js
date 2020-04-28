@@ -10,4 +10,5 @@ const clearResume = function(){
     person.contact = ''
     person.skills = ''
     person.schoolInfo = ''
+    person.certInfo = ''
 }

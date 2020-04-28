@@ -129,6 +129,7 @@ const buildResume = function(){
             }
         }
     }
+
     for (const x of document.querySelectorAll('.school-fields')){
         if (x.querySelector('.school').value!==''){
             person.addSchool(x.querySelector('.school').value,
@@ -153,4 +154,6 @@ const buildResume = function(){
         schoolInfo.innerText = person.schoolInfo
         document.querySelector('.school-list').appendChild(schoolInfo)
     }
+
+
 }

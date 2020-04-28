@@ -1,3 +1,19 @@
+const Cert = function(cert,yrCompleted){
+    return {
+        cert,
+        yrCompleted,
+        certInfo: '',
+        getCertInfo(cert,yrCompleted){
+            const arr = []
+            arr.push(cert)
+            if (yrCompleted!==''){
+                arr.push(gradYr)
+            }
+            this.certInfo = arr.join(', ')
+        }
+    }
+}
+
 const School = function(school,gradYr,degree){
     return {
         school,
@@ -37,6 +53,7 @@ const Person = function(){
         contact: '',
         skills: '',
         schoolInfo: '',
+        certInfo: '',
         work: [],
         schools: [],
         certs: [],
@@ -75,6 +92,14 @@ const Person = function(){
                 arr.push(x.schoolInfo)
             }
             this.schoolInfo = arr.join(' | ')
+        },
+        getCertInfo(){
+            const arr = []
+            for (const x of person.certs){
+                x.getCertInfo(x.cert,x.yrCompleted)
+                arr.push(x.certInfo)
+            }
+            this.certInfo = arr.join(' | ')
         }
     }
 }
