@@ -24,7 +24,32 @@
     border-style: hidden hidden solid hidden;
     border-width: 1px;
     border-color: black;
+    margin-bottom: 0;
 }
 .modal-skills {
     text-align: center;
+}
+.modal-sub-sub-heading {
+    background-color: #F2F2F2;
+    text-align: center;
+    margin-top: 0;
+}
+.job-heading {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.position-heading {
+    
+    font-style: italic;
+}
+.position-heading-alt {
+    font-style: italic;
+}
+.position-length {
+    margin-top: 0;
+}
+.duties-title {
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
 }

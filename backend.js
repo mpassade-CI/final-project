@@ -1,7 +1,24 @@
+
+const Work = function(company,position,startDate,endDate,duties){
+    return {
+        company,
+        position,
+        startDate,
+        endDate,
+        timeEmployed: '',
+        duties,
+        getTimeEmployed(){
+            if (this.startDate!=='' && this.endDate!==''){
+                this.timeEmployed = this.startDate + ' to ' + this.endDate
+            }
+        }
+    }
+}
 const Person = function(){
     return {
         contact: '',
         skills: '',
+        work: [],
         addContact(address,email,number){
             const arr = []
             if (address!==''){
@@ -23,6 +40,9 @@ const Person = function(){
                 }
             }
             this.skills = skillsArr.join(' | ')
+        },
+        addJob(company,position,startDate,endDate,duties){
+            this.work.push(Work(company,position,startDate,endDate,duties))
         }
     }
 }

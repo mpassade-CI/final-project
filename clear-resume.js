@@ -4,4 +4,5 @@ const clearResume = function(){
         document.querySelector('.modal_content').removeChild(child)
         child = document.querySelector('.modal_content').lastElementChild
     }
+    person.work.length = 0
 }
