@@ -116,7 +116,8 @@ const buildResume = function(){
             break
         }
     }
-    if (document.querySelectorAll('.modal-sub-heading')[
+    if (document.querySelectorAll('.modal-sub-heading').length===0 ||
+        document.querySelectorAll('.modal-sub-heading')[
         document.querySelectorAll('.modal-sub-heading').length-1].innerText
         !=='Education'){
         for (const x of document.querySelectorAll('.cert-name')){
@@ -155,5 +156,27 @@ const buildResume = function(){
         document.querySelector('.school-list').appendChild(schoolInfo)
     }
 
-
+    for (const x of document.querySelectorAll('.cert-fields')){
+        if (x.querySelector('.cert-name').value!==''){
+            person.addCert(x.querySelector('.cert-name').value,
+            x.querySelector('.cert-year').value)
+        }
+    }
+    if (person.certs.length > 0){
+        const certs = document.createElement('p')
+        certs.className = 'cert-list'
+        document.querySelector('.modal_content').appendChild(certs)
+        const certSect = document.createElement('span')
+        certSect.className = 'cert-info'
+        certSect.innerText = 'Certifications'
+        document.querySelector('.cert-list').appendChild(certSect)
+        const certSectColon = document.createElement('span')
+        certSectColon.className = 'cert-colon'
+        certSectColon.innerText = ': '
+        document.querySelector('.cert-list').appendChild(certSectColon)
+        person.getCertInfo()
+        const certInfo = document.createElement('span')
+        certInfo.innerText = person.certInfo
+        document.querySelector('.cert-list').appendChild(certInfo)
+    }
 }

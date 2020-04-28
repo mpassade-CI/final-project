@@ -7,7 +7,7 @@ const Cert = function(cert,yrCompleted){
             const arr = []
             arr.push(cert)
             if (yrCompleted!==''){
-                arr.push(gradYr)
+                arr.push(yrCompleted)
             }
             this.certInfo = arr.join(', ')
         }
@@ -92,6 +92,9 @@ const Person = function(){
                 arr.push(x.schoolInfo)
             }
             this.schoolInfo = arr.join(' | ')
+        },
+        addCert(cert,yrCompleted){
+            this.certs.push(Cert(cert,yrCompleted))
         },
         getCertInfo(){
             const arr = []

@@ -47,11 +47,11 @@
 .position-length {
     margin-top: 0;
 }
-.duties-title, .school-info {
+.duties-title, .school-info, .cert-info {
     font-weight: bold;
     font-style: italic;
     text-decoration: underline;
 }
-.school-colon {
+.school-colon, .cert-colon {
     font-weight: bold;
 }
