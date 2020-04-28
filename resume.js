@@ -141,8 +141,13 @@ const buildResume = function(){
         schools.className = 'school-list'
         document.querySelector('.modal_content').appendChild(schools)
         const schoolSect = document.createElement('span')
-        schoolSect.innerText = 'Education: '
+        schoolSect.className = 'school-info'
+        schoolSect.innerText = 'Education'
         document.querySelector('.school-list').appendChild(schoolSect)
+        const schoolSectColon = document.createElement('span')
+        schoolSectColon.className = 'school-colon'
+        schoolSectColon.innerText = ': '
+        document.querySelector('.school-list').appendChild(schoolSectColon)
         person.getSchoolInfo()
         const schoolInfo = document.createElement('span')
         schoolInfo.innerText = person.schoolInfo

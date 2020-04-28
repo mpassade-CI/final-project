@@ -39,7 +39,6 @@
     margin-bottom: 0;
 }
 .position-heading {
-    
     font-style: italic;
 }
 .position-heading-alt {
@@ -48,8 +47,11 @@
 .position-length {
     margin-top: 0;
 }
-.duties-title {
+.duties-title, .school-info {
     font-weight: bold;
     font-style: italic;
     text-decoration: underline;
+}
+.school-colon {
+    font-weight: bold;
 }
