@@ -19,6 +19,8 @@ const Person = function(){
         contact: '',
         skills: '',
         work: [],
+        education: [],
+        certs: [],
         addContact(address,email,number){
             const arr = []
             if (address!==''){
