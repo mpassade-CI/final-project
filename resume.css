@@ -26,7 +26,7 @@
     border-color: black;
     margin-bottom: 0;
 }
-.modal-skills {
+.modal-skills, .school-list, .cert-list {
     text-align: center;
 }
 .modal-sub-sub-heading {
